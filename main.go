@@ -52,8 +52,53 @@ func main() {
 
 	const k = 3 // typless
 
+	a,b := 15,20
+
+	set1 := (a == b)
+	set2 := (a < b)
+
+	fmt.Printf("%v\n", (set1 && set2)) // AND
+	fmt.Printf("%v\n", (set1 || set2)) // OR
+
+}
+
+func funcIf() {
 	
 
+	if x := 27; x%2 == 0 {
+		fmt.Println(x, "even value") // fmt.Printf("%v", x) 
+	}
+
+	else if x%2 != 0 {
+		fmt.Println(x, "odd value")
+	}
+
+	else {
+		fmt.Println("Error")
+	}
+}
+
+func funcSwitch(){
+	grade := 3
+	switch grade {
+	case 5:
+		fmt.Println("very good")
+	
+	case 4:
+		fmt.Println("good")
+	
+	case 3:
+		fmt.Println("okay")
+	
+	case 2:
+		fmt.Println("not bad")
+	
+	case 1:
+		fmt.Println("bad")
+	
+	default:
+		fmt.Println("invalid grade")
+	}
 }
 
 func funcVar() {
