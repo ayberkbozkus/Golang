@@ -101,6 +101,31 @@ func funcSwitch(){
 	}
 }
 
+func funcFor(){
+	grade := 3
+	
+	for i :=1; i<=10; i++ {
+		fmt.Println(i)
+	}
+
+	k := 10
+	for k<=100{
+		fmt.Println(i)
+		k += 10
+	}
+
+	for i := 0; i<10; i++ {
+		if i%3 ==0{ // go start
+			continue
+		}
+		if i%8 ==0{  // end loop
+			break
+		}
+		fmt.Println(i)
+	}
+
+}
+
 func funcVar() {
 	fmt.Println(packVar)
 }
