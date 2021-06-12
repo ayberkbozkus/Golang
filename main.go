@@ -21,7 +21,8 @@ func main() {
 		height float32 = 72.5
 		weight int 	   = 172
 	)
-	height := 17.5
+
+	height = 17.5
 	var packVar = "Test2"
 
 	fmt.Println("Hello World", name, name1, lastname, age, isMarried, height)
@@ -40,7 +41,7 @@ func main() {
 		fmt.Println("name1", name1, "name", name)
 	}
 
-	const x := 65 // constant --> compile time
+	const x = 65 // constant --> compile time
 
 	s := string(x) // ---> run time
 
@@ -59,7 +60,7 @@ func main() {
 
 	fmt.Printf("%v\n", (set1 && set2)) // AND
 	fmt.Printf("%v\n", (set1 || set2)) // OR
-
+	fmt.Println(sum(5,10))
 }
 
 func funcIf() {
@@ -67,13 +68,9 @@ func funcIf() {
 
 	if x := 27; x%2 == 0 {
 		fmt.Println(x, "even value") // fmt.Printf("%v", x) 
-	}
-
-	else if x%2 != 0 {
+	} else if x%2 != 0 {
 		fmt.Println(x, "odd value")
-	}
-
-	else {
+	} else {
 		fmt.Println("Error")
 	}
 }
@@ -86,6 +83,7 @@ func funcSwitch(){
 	
 	case 4:
 		fmt.Println("good")
+		fallthrough // continue
 	
 	case 3:
 		fmt.Println("okay")
@@ -102,15 +100,15 @@ func funcSwitch(){
 }
 
 func funcFor(){
-	grade := 3
+	
 	
 	for i :=1; i<=10; i++ {
 		fmt.Println(i)
 	}
 
 	k := 10
-	for k<=100{
-		fmt.Println(i)
+	for k<=100{ // while loop
+		fmt.Println(k)
 		k += 10
 	}
 
@@ -129,3 +127,8 @@ func funcFor(){
 func funcVar() {
 	fmt.Println(packVar)
 }
+
+func sum(x,y int) int {
+	return x+y
+}
+
