@@ -36,7 +36,7 @@ func main(){
 		} else if num < target {
 			fmt.Println(" Enter bigger number ")
 		} else {
-			fmt.Println(" True guess ", attemps, " you find ")
+			fmt.Println(" True guess", attemps, "you find ")
 			break
 		}
 	}
