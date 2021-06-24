@@ -24,6 +24,7 @@ func main() {
 	for index, city := range cities {
 		fmt.Println(index,city)
 	}
+	
 }
 
 func mySquare(arr[10]int) [10]int {
