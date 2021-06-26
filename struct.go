@@ -14,6 +14,11 @@ var employee struct {
 	isMarried bool
 }
 
+type manager struct { 
+	worker
+	hasDegree bool
+}
+
 func main(){
 
 	fmt.Println(employee)
@@ -43,9 +48,29 @@ func main(){
 	fmt.Printf("%#v \n", e1)
 	fmt.Printf("%#v \n", e2)
 
-	e3 := worker {
+	e3 := worker{
 		name : "Elis",
 		age : 3,
 		isMarried: false,
 	}
+
+	fmt.Println(e3)
+
+	m1 := manager{
+		worker: worker{
+			name: "Ayşe",
+			age: 28,
+			isMarried: false,
+		},
+		hasDegree: true,
+	}
+
+	fmt.Println(m1)
+
+	theBoss := struct{ // anonim struct
+		name string
+		money bool
+	}{name: "THE BOSS", money: true}
+
+	fmt.Println(theBoss)
 }
