@@ -55,4 +55,18 @@ func main() {
 	for k, v := range studentGrades{
 		fmt.Println(k,v)
 	}
+
+	myMap3 := map[string][]string {
+		"Yaşar Kemal": []string{"Ince Mehmet", "Yer Demir Gök Bakır"},
+		"Sebahattin Ali": []string{"Kuyucaklı Yusuf", "Kürk Mantolu Madonna", "Değirmen"},
+	}
+	fmt.Println(myMap3)
+	fmt.Println(myMap3["Yaşar Kemal"])
+
+	for key, value := range myMap3{
+		fmt.Println("Writer: ", key)
+		for i,v := range value{
+			fmt.Println("\t", i+1, "book : ", v)
+		}
+	}
 }
