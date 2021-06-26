@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type worker struct { // underlying type
+type worker struct { // struct --> underlying type, employee --> Defined Type, Named Type
 	name string
 	age int
 	isMarried bool
