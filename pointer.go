@@ -52,4 +52,30 @@ func main() {
 
 	fmt.Println(s1, "\t", s2)
 	
+	mySlc := []int{1,10,100}
+
+	double(mySlc) 
+	fmt.Println(mySlc) 
+
+	num := 5
+	doubleValue(num) 
+	doubleValueP(&num)
+	fmt.Println(num)
+}
+
+func double(slc []int){ // pass by refence
+	for i :=0; i< len(slc); i++ {
+		slc[i] *=2
+	}
+	fmt.Println(slc)
+}
+
+func doubleValue(num int){ // pass by value
+	num *= 2
+	fmt.Println(num)
+}
+
+func doubleValueP(num *int){ // pass by value
+	num *= 2
+	fmt.Println(num)
 }
