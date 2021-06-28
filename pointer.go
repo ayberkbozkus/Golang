@@ -76,6 +76,6 @@ func doubleValue(num int){ // pass by value
 }
 
 func doubleValueP(num *int){ // pass by value
-	num *= 2
-	fmt.Println(num)
+	*num *= 2
+	fmt.Println(*num)
 }
