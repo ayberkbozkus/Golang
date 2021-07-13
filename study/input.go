@@ -34,8 +34,8 @@ func getGrade() (int, error) {
 		fmt.Println(err)
 	}
 
-	input = strings.TrimSpace(input)
-	num, err := strconv.Atoi(input)
+	input2 = strings.TrimSpace(input)
+	num, err := strconv.Atoi(input2)
 
 	if err != nil {
 		fmt.Println(err)
